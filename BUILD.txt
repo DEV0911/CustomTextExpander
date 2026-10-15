@@ -1,0 +1,17 @@
+Custom Text Expander
+
+Requirements: Windows + .NET 8 SDK
+
+Build a single-file Windows EXE from this folder:
+
+dotnet publish CustomTextExpander.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+
+Executable will be under:
+bin\Release\net8.0-windows\win-x64\publish\CustomTextExpander.exe
+
+Current mappings:
+to_date -> to_date('1/1/2026','mm/dd/yyyy')
+ASDFC -> I will let you know
+
+Expansion triggers: Space, Tab, Enter.
+Important: this prototype does not log or persist typed text.
